@@ -17,18 +17,32 @@ function Navigation() {
   ]
 
   return (
-    <nav className={`sticky top-0 z-50 shadow-md`}></nav>
+    <nav className={`sticky top-0 z-50 shadow-md`}>
+      
+
+
+    </nav>
+
+  )
+}
+
+function AppContent() {
+  return (
+    <div className={`min-h-screen bg-gray-800`}>
+
+    <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+    
+    </div>
+    
   )
 }
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <h1>Vite + React</h1>
-    </>
-  )
+  return <AppContent/>;
 }
 
 export default App
